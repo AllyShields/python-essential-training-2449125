@@ -117,7 +117,7 @@ class CanvasAxis(Canvas):
         print(' '.join([self.formatAxisNumber(x) for x in range(self._x)]))
 
 class TerminalScribe:
-    def __init__(self, color='red', mark='*', trail='.', pos=(0, 0), degrees=135):
+    def __init__(self, color='red', mark='!', trail='.', pos=(0, 0), degrees=135):
         self.moves = []
 
         if color not in COLORS:
@@ -319,3 +319,4 @@ canvas.toFile('solution_file')
 
 newCanvas = Canvas.fromFile('solution_file')
 newCanvas.go()
+ 
